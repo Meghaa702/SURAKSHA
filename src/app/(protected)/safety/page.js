@@ -22,14 +22,14 @@ const Safety = () => {
       setIsLocationPermissionGranted(true);
       let lat = position.coords.latitude;
       let long = position.coords.longitude;
-      localStorage.setItem('sakhi_lat', lat);
-      localStorage.setItem('sakhi_long', long);
-      localStorage.setItem('sakhiLocationPermission', true);
+      localStorage.setItem('suraksha_lat', lat);
+      localStorage.setItem('suraksha_long', long);
+      localStorage.setItem('surakshaLocationPermission', true);
     });
   };
 
   const checkLocationPermission = () => {
-    if (localStorage.getItem('sakhiLocationPermission') === 'true') {
+    if (localStorage.getItem('surakshaLocationPermission') === 'true') {
       setIsLocationPermissionGranted(true);
     } else {
       alert('We need Location Permission to work, Please allow us');
@@ -48,8 +48,8 @@ const Safety = () => {
   const openNearby = (x) => {
     window.open(
       `https://www.google.com/maps/search/${x}/@${localStorage.getItem(
-        'sakhi_lat'
-      )},${localStorage.getItem('sakhi_long')}`,
+        'suraksha_lat'
+      )},${localStorage.getItem('suraksha_long')}`,
       '_blank'
     );
   };
