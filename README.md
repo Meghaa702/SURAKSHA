@@ -1,6 +1,6 @@
 <div align="center">
   <h1> 
-    <img src="https://Suraksha.vercel.app/logo.png" width="64px">
+    <img src="https://sakhi.vercel.app/logo.png" width="64px">
     <br/> 
     Suraksha: Wellness Friend
   </h1>
