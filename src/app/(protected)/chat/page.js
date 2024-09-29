@@ -12,7 +12,7 @@ export default function Chat() {
     initialMessages:[
       {
         role: "model",
-        content: `Hello, I am suraksha Bot, your friendly and helpful chatbot for women's health and well-being. I can provide you with information and guidance on various topics related to women's health, such as:
+        content: `Hello, I am Sakhi Bot, your friendly and helpful chatbot for women's health and well-being. I can provide you with information and guidance on various topics related to women's health, such as:
 
   - Women safety
   - Period and menstrual cycle
@@ -27,10 +27,10 @@ Please note that I am not a medical professional, and my advice is not a substit
   return (
     <div className="relative h-[calc(100vh-190px)] overflow-y-auto hide-scrollbar">
       <main className="flex-1 flex flex-col gap-4 py-4">
-        {/* <surakshaMessage message="Hi, I am suraksha Bot. I am here to help you regarding female wellness." /> */}
+        {/* <SakhiMessage message="Hi, I am Suraksha Bot. I am here to help you regarding female wellness." /> */}
         {messages.map((m, index) =>
           m.role !== "user" ? (
-            <surakshaMessage message={m.content} key={index} />
+            <SakhiMessage message={m.content} key={index} />
           ) : (
             <UserMessage message={m.content} key={index} />
           )
@@ -67,12 +67,12 @@ Please note that I am not a medical professional, and my advice is not a substit
   );
 }
 
-function surakshaMessage({ message, key }) {
+function SakhiMessage({ message, key }) {
   return (
     <div key={key} className="flex items-end">
       <img src="/logo.png" alt="" className="mr-2 w-6 h-6 self-start mt-3" />
       <div className="rounded-lg bg-pink-100 p-4">
-        <p className="text-sm whitespace-pre-wrap max-w-[80vw] suraksha-markdown-message" dangerouslySetInnerHTML={{
+        <p className="text-sm whitespace-pre-wrap max-w-[80vw] sakhi-markdown-message" dangerouslySetInnerHTML={{
           __html: marked.parse(message),
         }}></p>
       </div>
