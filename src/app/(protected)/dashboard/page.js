@@ -36,7 +36,7 @@ export default function Dashboard() {
     { color: "orange", label: "Community", href: "/social", icon: HiUserGroup },
     {
       color: "sky",
-      label: "suraksha Bot",
+      label: "Suraksha Bot",
       href: "/chat",
       icon: HiChatBubbleBottomCenterText,
     },
