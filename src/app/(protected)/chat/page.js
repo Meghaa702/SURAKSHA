@@ -12,7 +12,7 @@ export default function Chat() {
     initialMessages:[
       {
         role: "model",
-        content: `Hello, I am Sakhi Bot, your friendly and helpful chatbot for women's health and well-being. I can provide you with information and guidance on various topics related to women's health, such as:
+        content: `Hello, I am Suraksha Bot, your friendly and helpful chatbot for women's health and well-being. I can provide you with information and guidance on various topics related to women's health, such as:
 
   - Women safety
   - Period and menstrual cycle
